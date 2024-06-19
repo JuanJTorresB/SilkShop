@@ -1,0 +1,7 @@
+.Vista_Carrito {
+    grid-template-areas:
+    "Titulo"
+    "Productos"
+    "Botones";
+}
+
