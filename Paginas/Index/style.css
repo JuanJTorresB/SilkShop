@@ -1,0 +1,25 @@
+.Filtros {
+    justify-content: center;
+    align-items: center ;
+    justify-items: center;
+}
+
+.Filtros__Productos {
+    justify-content: space-around;
+}
+
+.Productos__Producto {
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.Producto__Figura {
+    display: flex;
+    max-width: 400px;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    align-items: end;
+}
+

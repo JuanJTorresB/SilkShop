@@ -30,6 +30,10 @@ a {
     text-decoration: none;
 }
 
+mark {
+    background: none;
+}
+
 #header__h1 {
     font-family: var(--Fuente);
     color: var(--C_color);
@@ -127,6 +131,7 @@ a {
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
+    row-gap: 2vw;
 }
 
 .Filtros__Productos {
@@ -134,13 +139,14 @@ a {
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
+    gap: 2vw;
 }
 
 /* Productos */
 
 .Productos__Producto {
     width: 30%;
-    height: 40vw;
+    height: fit-content;
     display: grid;
     grid-template-areas:
     "Arriba"
@@ -155,18 +161,22 @@ a {
     flex-wrap: wrap;
     grid-area: Abajo;
     background-color: #84D2FF;
-    height: 100%;
+    min-height: fit-content; ;
     justify-content: center;
     align-items: center;
 }
 .Producto__Arriba {
+    display: flex;
     grid-area: Arriba;
     background-color: #C2FF73;
     height: 100%;
 }
 
 .Producto__Img {
-    width: 100%;
+    position: relative;
+    left: 25%;
+    width: 50%;
+    height: 80%;
 }
 
 .Producto__Nombre {
