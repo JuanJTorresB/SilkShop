@@ -56,11 +56,12 @@
     align-items: center;
 }
 .Producto__Arriba {
+    display: flex;
+    justify-content: space-around;
     grid-area: Arriba;
     background-color: #C2FF73;
     height: 100%;
     align-items: center;
-    justify-content: center;
 }
 
 .Producto__Img {
