@@ -11,8 +11,12 @@
   :root {
     --C_Subtitule_Size: 120 %;
   }
-  .nav__lista__item a {
+  .nav__lista__item a, .footer-p p{
     writing-mode: vertical-rl;
+  }
+  .footer-p p {
+    position: relative;
+    left: 100%;
   }
 }
 
@@ -20,6 +24,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+aside {
+  z-index: 100;
 }
 
 .Esqueleto-VP {
@@ -43,10 +51,18 @@ mark {
   background: none;
 }
 
-#header__h1 {
+#header__h1{
   font-family: var(--Fuente);
   color: var(--C_color);
   font-size: 3vw;
+}
+
+.Titulo_Pag {
+  width: 100%;
+  font-family: var(--Fuente);
+  color: var(--A_color);
+  font-size: 10vw;
+  text-align: center;
 }
 
 #Logo-Header {
@@ -93,7 +109,7 @@ mark {
 }
 
 .nav__lista {
-  height: 100%;
+  height: 80%;
   list-style-type: none;
   text-align: center;
 }
@@ -124,7 +140,7 @@ mark {
 
 .main-p {
   position: relative;
-  left: 15%;
+  left: 21%;
   display: flex;
   width: 80%;
   height: 100%;
@@ -207,20 +223,40 @@ mark {
   height: 40%;
 }
 
-/* Footer */
-
-.footer-bg {
-  grid-area: footer;
-  background-color: var(--A_color);
+@keyframes Scrool-Show {
+  from{
+      opacity: 0;
+      scale: 50%;
+      transform: translateX(-100px);
+  }
+  to{
+      opacity: 1;
+      scale: 100%;
+      transform: translateX(0px);
+  }
 }
 
+.Productos__Producto{
+  animation: Scrool-Show linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+/* Footer */
+
 .footer-p {
+  position: fixed;
+  left: 6%;
+  top: 80%;
   display: flex;
   justify-content: center;
+  height: 20%;
+  z-index: 110;
 }
 
 .footer-p p {
   font-size: var(--C_Subtitule_Size);
   color: var(--C_color);
   align-self: center;
+  z-index: 120;
 }
