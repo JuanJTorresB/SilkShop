@@ -81,7 +81,7 @@ mark {
 
 .header-p {
   position: fixed;
-  height: 100vh;
+  height: 100%;
   grid-template-areas:
     "header--arriba"
     "header--abajo"

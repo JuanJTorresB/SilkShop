@@ -1,27 +1,27 @@
 .Filtros {
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  width: 100%;
+justify-content: center;
+align-items: center;
+justify-items: center;
+width: 100%;
 }
 
 .Filtros__Productos {
-  justify-content: space-around;
+justify-content: space-around;
 }
 
 .Productos__Producto {
-  min-width: 200px;
-  max-width: 400px;
+min-width: 200px;
+max-width: 400px;
 }
 
 .Producto__Figura {
-  display: flex;
-  max-width: 400px;
-  height: 40vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  align-items: end;
+display: flex;
+max-width: 400px;
+height: 40vh;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top;
+align-items: end;
 }
 
 @keyframes FadeOut {
@@ -29,7 +29,7 @@
       opacity: 0;
       display: none;
   }
-}
+} 
 
 .Hidden {
   animation: FadeOut .5s forwards;
@@ -38,9 +38,12 @@
 /* Estilos Compra Exitosa */
 
 .P-container {
+  display: inline-flex;
+  max-width: 20vw;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .Titulo--compra-exitosa {
-  width: 50%;
+  width: 100%;
 }
