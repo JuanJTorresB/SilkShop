@@ -12,6 +12,8 @@
     --C_Subtitule_Size: 120 %;
   }
   .nav__lista__item a, .footer-p p{
+    position: relative;
+    rotate: 180deg;
     writing-mode: vertical-rl;
   }
   .footer-p p {
@@ -163,6 +165,7 @@ mark {
 }
 
 .Filtros__Productos {
+  justify-content: center;
   width: fit-content;
   height: fit-content;
   display: flex;
@@ -219,8 +222,13 @@ mark {
 }
 
 .Producto__Boton {
+  min-width: fit-content;
+  min-height: fit-content;
   width: 80%;
   height: 40%;
+  background: var(--R_color);
+  border-radius: 25px  25px 0% 0%;
+  border: none;
 }
 
 @keyframes Scrool-Show {

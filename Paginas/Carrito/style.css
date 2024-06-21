@@ -4,21 +4,21 @@
     --R_color: #C2FF73;
     --Fuente: Arial, Helvetica, sans-serif;
     --C_Text_Size: .5vw;
-    --C_Subtitule_Size: 1.5vw;
+    --C_Subtitule_Size: 2vw;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     :root {
-        --C_Subtitule_Size: 120 %;
+      --C_Subtitule_Size: 500 %;
     }
     .nav__lista__item a, .footer-p p{
-        writing-mode: vertical-rl;
+      writing-mode: vertical-rl;
     }
     .footer-p p {
-        position: relative;
-        left: 100%;
+      position: relative;
+      left: 100%;
     }
-}
+  }
 
 @keyframes FadeOut {
     to {
@@ -31,10 +31,10 @@ body {
     background-color: var(--A_color);
 }
 
-main {
-    margin-left: 10%;
+.main-p {
+    position: relative;
+    left: 21%;
 }
-
 i {
     display: flex;
 }
@@ -144,10 +144,40 @@ button {
 
 .Producto__Abajo {
     column-gap: 2vw;
+    overflow: hidden;
 }
 
 .Vista_Filtros {
     position: relative;
     width: 60vw ;
     right: 0%;
+}
+
+strong {
+    font-weight: 200;
+}
+
+@keyframes Apretar_Boton {
+    to {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+.Botones__Carrito {
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    grid-area: Botones;
+    display: flex;
+}
+
+.Boton--carrito {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 20vw;
+    padding: 2vh;
+    padding-bottom: 2vh;
+    border-radius: 0;
 }
