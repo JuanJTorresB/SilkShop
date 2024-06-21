@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Estilos-Generales/Estructura-General.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/Recursos/Logo/SilkSHop.png" type="image/png">
+    <title>SilkShop</title>
+</head>
+<body class="Esqueleto-VP">
+    <aside class="header-bg header-p">
+        <div class="header-divs header--arriba">
+            <h1 id="header__h1">SilkShop</h1>
+            <img src="../../Recursos/Logo/SilkSHop.png" alt="Logo SilkShop" id="Logo-Header">
+        </div>
+        <div class="header-divs header--abajo">
+            <nav id="header-nav">
+                <ul class="nav__lista">
+                    <li class="nav__lista__item"><a href="../Index/index.html">Todos Los Productos</a></li>
+                    <li class="nav__lista__item"><a href="../FIltros/Abrigos/abrigos.html">Abrigos</a></li>
+                    <li class="nav__lista__item"><a href="../FIltros/Camisetas/camisetas.html">Camisetas</a></li>
+                    <li class="nav__lista__item"><a href="../FIltros/Pantalones/pantalones.html">Pantalones</a></li>
+                    <li class="nav__lista__item"><a href="../Carrito/carrito.html"><strong>Carrito</strong></a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <main class="main-bg main-p">
+        <article class="Vista_Filtros">
+            <section class="Filtros F--abrigos">
+                <h3 class="Titulo_Pag">Carrito Vacio :c</h3>
+                <ul class="Filtros__Productos">
+                </ul>
+            </section>
+        </article>
+    </main>
+    <footer class="footer-bg footer-p">
+        <p id="Copyr">
+            © SilkShop 2023
+        </p>
+    </footer>
+    <script src="https://kit.fontawesome.com/6b61d34628.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("click", (e) => {
+            console.log(e.target.nodeName)
+            if (e.target.nodeName == 'I') {
+                e.target.closest('li').classList.add('Hidden')
+            }
+        });
+    </script>
+</body>
+</html>
