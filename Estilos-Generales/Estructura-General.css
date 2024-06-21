@@ -12,7 +12,7 @@
     --C_Subtitule_Size: 120 %;
   }
   .nav__lista__item a {
-    writing-mode: vertical-lr;
+    writing-mode: vertical-rl;
   }
 }
 
