@@ -13,11 +13,13 @@
 5. [Autor](#autor-)
 
 ## Información General 📒
-CAL-EL es un proyecto en el que mediante un sistema CRUD y manteniendo una persistencia de datos mediante archivos .JSON, se creó un software capaz de almacenar la información de distintos usuarios, a la vez que crear distintos roles con diferentes funciones entre sí.
+SIlkShop es un proyecto frontend en el que se evidencia un manejo de CSS, HTMl y un poco de Javascript. El proyecto se define como un e-comerce de ropa
 
 ## Tecnologías 🤖
 Tecnologías usadas en este proyecto:
-- Python: Versión 3
+- HTML: Versión 5
+- css: Versión 5
+- HTML: Versión 5
 
 ## Instalación 📦
 ```bash
