@@ -18,20 +18,22 @@ SIlkShop es un proyecto frontend en el que se evidencia un manejo de CSS, HTMl y
 ## Tecnologías 🤖
 Tecnologías usadas en este proyecto:
 - HTML: Versión 5
-- css: Versión 5
-- HTML: Versión 5
+- CSS: Versión 3
+- Javascript: ECMAScript 2020
 
 ## Instalación 📦
 ```bash
-git clone https://github.com/JuanJTorresB/CAL-EL.git
+git clone https://github.com/JuanJTorresB/SilkShop.git
 ```
-Ejecuta el archivo Main.py desde Vscode
+Ejecuta el archivo Main.py desde Vscode usando la extension de Live Server
 
 ## Como Aportar 🛠
 ***
-> Restructurar los archivos Json
+> Crear una funcionalidad Backend
 
-> Crear CRUDS para mas productos o servicios
+> Agregar Productos
+
+> Agregar Animaciones y Trancisiones 
 
 ## Autor 🐦‍🔥
 ***
